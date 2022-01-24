@@ -27,6 +27,7 @@ gem 'mini_magick'
 gem 'dotenv-rails'
 
 gem 'fog-aws'
+gem 'unicorn' # アプリケーションサーバのunicorn
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -36,7 +37,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'bcrypt_pbkdf'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capistrano', '3.16.0' # capistranoのツール一式
+  gem 'capistrano3-unicorn'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'ed25519'
 end
 
 group :development do
