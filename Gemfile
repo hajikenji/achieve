@@ -29,7 +29,7 @@ gem 'dotenv-rails'
 gem 'fog-aws'
 gem 'unicorn' # アプリケーションサーバのunicorn
 
-gem 'rename'
+# gem 'rename'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
